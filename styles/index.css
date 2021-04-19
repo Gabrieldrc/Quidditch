@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(65, 65, 65);
+}
+#screen, h1 {
+  margin: auto;
+  width: fit-content;
+}
+h1 {
+  color: white;
+  margin-bottom: 50px;
+}
+.button {
+  padding: 4px 6px;
+  background-color: white;
+  color: black;
+  margin: auto 2px;
+  border-radius: 2px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: tomato;
+  color: white;
+}
+.button:active {
+  background-color: rgb(214, 82, 59);
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: 2rem auto;
+}
