@@ -56,3 +56,6 @@ h2 {
 p {
   margin: 3rem 1rem;
 }
+ul > li {
+  margin-left: 4rem;
+}
