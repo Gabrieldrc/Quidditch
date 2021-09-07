@@ -1,12 +1,12 @@
 <html>
 	<head>
-		<title>p5.js Typescript Template</title>
+		<title>Quidditch</title>
 		<meta charset="UTF-8" />
 		<link rel="stylesheet" href="./styles/index.css">
 	</head>
 	<body>
-		<div class="container" id="app">
-			<h1>Quidditch</h1>
+		<h1>Quidditch</h1>
+		<section class="container" id="app">
 			<div id="screen"></div>
 			<div class="flex-row">
 				<div class="button" id="playQuidditchGame">Start</div>
@@ -15,7 +15,38 @@
 				<div class="button" id="fs15">15 F/S</div>
 				<div class="button" id="fs0">Pause</div>
 			</div>
-		</div>
+		</section>
+		<section>
+			<h2>El juego</h2>
+			<p>
+				Como se puede detallar, este es una simulacion de un partido de Quidditch entre HufflePuff y Ravenclaw. El juego termina cuando uno de los equipos alcance la puntuacion de 200.
+			</p>
+			<ul>Personajes involucrados:
+				<li>Snitch: El circulo pequeño dorado. Se mueve de forma aleatoria. Si detecta un jugador en un radio cercano ira al sentido contrario. Si colisiona con un Seeker, se aumentarán 150 puntos al equipo que pertenezca dicho Seeker.</li>
+				<li>Quaffle: El circulo rojo. Aumenta la puntuación del equipo contrario al entrar a algun aro.</li>
+				<li>Bludger: Los circulos barrones. Se encargarán de derribar (detener por unos segundos) al jugador con que colisione.</li>
+				<li>Keepers: Los circulos con una "k". Avanzan a la misma altura donde este la quaffle para tratar de defender los aros. Una vez tengan la Quaffle se la pasaran al jugador mas cercano. No pueden salir de la zona de los aros.</li>
+				<li>Beaters: Los circulos con una "b". Se mueven de forma aleatoria. Si colisionan con una Bludger pueden repelerla.</li>
+				<li>Chasers: Los circulos con una "c". Se mueven de forma aleatoria. Si colisionan con la quaffle trataran de pasarsela al chaser mas cercano de su equipo el cual esperara el pase por unos pocos segundo y seguira su recorrido. En caso de no encontrar algun chaser entre el y el aro de anotacion, lanzara a alguno de los aros para anotar.</li>
+				<li>Seekers: Los circulos con una "s". Se mueven de forma aleatoria. Si detectan una Snitch en un radio cercano a ellos, la perseguiran mientras la Snitch este en ese radio.</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Objetivo de esta practica</h2>
+			<p>En esta practica se vió el uso y el problema que solucionan los patrones de diseño en elaborar un codigo que pueda evolucionar con el tiempo.</p>
+			<ul>
+				Como para nombrar algunos, estan:
+				<li>Observadores</li>
+				<li>Doble Dispatch</li>
+				<li>Abstract Factory</li>
+				<li>Composite</li>
+				<li>Builder</li>
+				<li>Singleton</li>
+				<li>Decorator</li>
+				<li>Strategi</li>
+				...entre otros
+			</ul>
+		</section>
 		<script src="src/app.ts"></script>
 	</body>
 </html>
